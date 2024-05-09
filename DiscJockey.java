@@ -3,17 +3,20 @@ import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.Iterator;
 
+
 public class DiscJockey {
 	
 	SongsOfThe70s songs70s;
 	SongsOfThe80s songs80s;
 	SongsOfThe90s songs90s;
+	SongsFavorites songsFavs;
 	
 	// NEW Passing in song iterators
 	
 	SongIterator iter70sSongs;
 	SongIterator iter80sSongs;
 	SongIterator iter90sSongs;
+	SongIterator iterFavsSongs;
 	
 	/* OLD WAY
 	public DiscJockey(SongsOfThe70s newSongs70s, SongsOfThe80s newSongs80s, SongsOfThe90s newSongs90s) {
@@ -27,11 +30,12 @@ public class DiscJockey {
 	
 	// NEW WAY Initialize the iterators	
 	
-	public DiscJockey(SongIterator newSongs70s, SongIterator newSongs80s, SongIterator newSongs90s) {
+	public DiscJockey(SongIterator newSongs70s, SongIterator newSongs80s, SongIterator newSongs90s, SongIterator newSongsFavs) {
 		
 		iter70sSongs = newSongs70s;
 		iter80sSongs = newSongs80s;
 		iter90sSongs = newSongs90s;
+		iterFavsSongs = newSongsFavs;
 		
 	}
 	
@@ -83,6 +87,20 @@ public class DiscJockey {
 			
 	    }
 		
+		ArrayList aLFavsSongs = songsFavs.getBestSongs();
+		
+		System.out.println("Favorite Songs\n");
+		
+		for(int i=0; i < aLFavsSongs.size(); i++){
+			
+			SongInfo bestSongs = (SongInfo) aLFavsSongs.get(i);
+			
+			System.out.println(bestSongs.getSongName());
+			System.out.println(bestSongs.getBandName());
+			System.out.println(bestSongs.getYearReleased() + "\n");
+			
+		}
+		
 	}
 	
 	// Now that I can treat everything as an Iterator it cleans up
@@ -95,6 +113,7 @@ public class DiscJockey {
 		Iterator Songs70s = iter70sSongs.createIterator();
 		Iterator Songs80s = iter80sSongs.createIterator();
 		Iterator Songs90s = iter90sSongs.createIterator();
+		Iterator SongsFavs = iterFavsSongs.createIterator();
 		
 		System.out.println("Songs of the 70s\n");
 		printTheSongs(Songs70s);
@@ -104,6 +123,9 @@ public class DiscJockey {
 		
 		System.out.println("Songs of the 90s\n");
 		printTheSongs(Songs90s);
+		
+		System.out.println("Favorite Songs\n");
+		printTheSongs(SongsFavs);
 		
 	}
 	
