@@ -1,4 +1,9 @@
 # CS468-Final
+
+MAIN BRANCH
+Pulling from this branch will provide the same functionality as pulling from the JavaDoc branch. There were no changes to the code.
+
+
 Iterator Design Pattern. Implementation of a design pattern exampled by Derek Banas.
 
 The initial commit "base code" is code created and provided by Derek Banas
