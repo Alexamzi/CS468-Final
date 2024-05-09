@@ -20,6 +20,14 @@ public class SongExtraInfo extends SongInfo{
     }
 
 
+    
+    /** 
+     * @param newSongName
+     * @param newBandName
+     * @param newYearReleased
+     * @param newPlayTime
+     * @param newAlbum
+     */
     public void SongInfo(String newSongName, String newBandName, int newYearReleased, String newPlayTime, String newAlbum){
 		
 		songName = newSongName;

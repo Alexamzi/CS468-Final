@@ -129,6 +129,10 @@ public class DiscJockey {
 		
 	}
 	
+	
+	/** 
+	 * @param iterator
+	 */
 	public void printTheSongs(Iterator iterator){
 		
 		while(iterator.hasNext()){

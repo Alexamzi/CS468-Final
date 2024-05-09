@@ -21,6 +21,12 @@ public class SongsOfThe80s implements SongIterator{
 		
 	}
 	
+	
+	/** 
+	 * @param songName
+	 * @param bandName
+	 * @param yearReleased
+	 */
 	// Add a SongInfo Object to the array and increment to the next position
 	
 	public void addSong(String songName, String bandName, int yearReleased){

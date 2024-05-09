@@ -1,5 +1,9 @@
 public class RadioStation {
 	
+	
+	/** 
+	 * @param args
+	 */
 	public static void main(String[] args){
 		
 		SongsOfThe70s songs70s = new SongsOfThe70s();

@@ -17,6 +17,12 @@ public class SongsOfThe70s implements SongIterator{
 		
 	}
 	
+	
+	/** 
+	 * @param songName
+	 * @param bandName
+	 * @param yearReleased
+	 */
 	// Add a SongInfo object to the end of the ArrayList
 	
 	public void addSong(String songName, String bandName, int yearReleased){

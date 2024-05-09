@@ -20,6 +20,12 @@ public class SongsOfThe90s implements SongIterator{
 		
 	}
 	
+	
+	/** 
+	 * @param songName
+	 * @param bandName
+	 * @param yearReleased
+	 */
 	// Add a new SongInfo Object to the Hashtable and then increment
 	// the Hashtable key
 	
