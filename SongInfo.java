@@ -10,6 +10,14 @@ public class SongInfo{
 	String songName; 
 	String bandName; 
 	int yearReleased;
+
+	public SongInfo(){
+		
+		songName = "";
+		bandName = "";
+		yearReleased = 0;
+		
+	}
 	
 	public SongInfo(String newSongName, String newBandName, int newYearReleased){
 		

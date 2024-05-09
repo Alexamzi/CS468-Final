@@ -93,11 +93,11 @@ public class DiscJockey {
 		
 		for(int i=0; i < aLFavsSongs.size(); i++){
 			
-			SongInfo bestSongs = (SongInfo) aLFavsSongs.get(i);
+			SongExtraInfo bestSongs = (SongExtraInfo) aLFavsSongs.get(i);
 			
 			System.out.println(bestSongs.getSongName());
 			System.out.println(bestSongs.getBandName());
-			System.out.println(bestSongs.getYearReleased() + "\n");
+			System.out.println(bestSongs.getYearReleased());
 			
 		}
 		
@@ -125,7 +125,7 @@ public class DiscJockey {
 		printTheSongs(Songs90s);
 		
 		System.out.println("Favorite Songs\n");
-		printTheSongs(SongsFavs);
+		printTheSongs2(SongsFavs);
 		
 	}
 	
@@ -138,8 +138,24 @@ public class DiscJockey {
 			System.out.println(songInfo.getSongName());
 			System.out.println(songInfo.getBandName());
 			System.out.println(songInfo.getYearReleased() + "\n");
-			
 		}
+
+		
+	}
+	
+	public void printTheSongs2(Iterator iterator){
+		
+		while(iterator.hasNext()){
+			
+			SongExtraInfo songInfo = (SongExtraInfo) iterator.next();
+			
+			System.out.println("Title:  \t" + songInfo.getSongName());
+			System.out.println("Artist: \t" + songInfo.getBandName());
+			System.out.println("Year:   \t" + songInfo.getYearReleased());
+			System.out.println("Album:  \t" + songInfo.getAlbum());
+			System.out.println("Time:   \t" + songInfo.getPlaytime() + "\n");
+		}
+
 		
 	}
 	
