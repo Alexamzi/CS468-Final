@@ -6,9 +6,13 @@ https://www.newthinktank.com/2012/10/iterator-design-pattern-tutorial/
 
 To build the code, you can compile the "RadioStation.java" class and execute the program.
 I added a Makefile to make this easier:
+
     1. Navigate to the project folder in a terminal window
+    
     2. Compile the code by entering the command "make"
+    
     3. Run the code by entering "make run"
+    
     Optional. Enter "make clean" to remove all the generated .class files
 
 The output of the project should print a list all of the songs to the terminal window.
